@@ -24,3 +24,14 @@ n = 6:
 55555
 666666
 """
+
+
+def triangular_sequence():
+    for i in range(n + 1):
+        print(str(i) * i)
+
+
+
+
+
+

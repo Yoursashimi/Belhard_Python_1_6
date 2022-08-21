@@ -10,3 +10,20 @@ next(factorial_gen) -> 2
 next(factorial_gen) -> 6
 next(factorial_gen) -> 24
 """
+
+
+def factorial():
+    f = 1
+    for i in range(1, 10):
+        f = f * i
+        yield f
+
+
+factorial_gen = factorial()
+
+
+print(next(factorial_gen))
+print(next(factorial_gen))
+print(next(factorial_gen))
+print(next(factorial_gen))
+

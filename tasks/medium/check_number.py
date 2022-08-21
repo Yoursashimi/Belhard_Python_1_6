@@ -5,3 +5,17 @@ False, если нет
 
 Нельзя пользоваться операцией возведения в степень
 """
+
+
+from math import log
+
+
+def check_number(number) -> bool:
+    logn = log(number, 2)
+    if logn == int(logn):
+        return True
+    else:
+        return False
+
+
+print(check_number(3))
